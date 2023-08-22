@@ -1,12 +1,24 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Actividades a Realizar
 
-Currently, two official plugins are available:
+### Creación de componentes MUIComponents: 2 Horas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Creación de contenedores UserSection: 2 Horas
 
+### Creación de estructura Redux--Thunks: 3 Horas
+
+### Creación de RTK Query en UserSection: 1.5 Horas
+
+### Creación de Login y Register: 1.5 Horas
+
+### Creación de paginas de UserSection: 1 Hora
+
+### Creación de componentes AdminSection: 2 Horas
+
+### Creación de RTK Query en AdminSection: 1.5 Horas
+
+### Creación de AdminSection pages: 2 Horas
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
