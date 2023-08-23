@@ -37,10 +37,9 @@ const CharacterSlider: React.FC<CharacterSliderProps> = ({
 	useEffect(() => {
 		const updateSlidesToShow = () => {
 			const width = window.innerWidth;
-			if (width > 1500) return setSlidesToShow(4);
+			if (width > 1700) return setSlidesToShow(5);
 			if (width > 1200) return setSlidesToShow(3);
-			if (width > 800) return setSlidesToShow(2);
-			return setSlidesToShow(1);
+			if (width > 600) return setSlidesToShow(1);
 		};
 
 		// Ejecuta la función al montar el componente
@@ -62,14 +61,17 @@ const CharacterSlider: React.FC<CharacterSliderProps> = ({
 		slidesToScroll: slidesToShow,
 		focusOnSelect: true,
 		variableWidth: false,
-		swipeToSlide: true,
 		touchThreshold: 5,
 		centerPadding: '0',
 	};
 
 	return (
-		<Grid container>
-			<Grid item sx={{ mx: 'auto', paddingTop: 4 }} xs={10}>
+		<Grid container sx={{ maxWidth: '100vw' }}>
+			<Grid
+				item
+				sx={{ paddingTop: 4, overflowX: 'hidden', overflowY: 'visible' }}
+				xs={12}
+			>
 				<Slider {...settings}>
 					{characters.map((character, index) => (
 						<div key={index}>
