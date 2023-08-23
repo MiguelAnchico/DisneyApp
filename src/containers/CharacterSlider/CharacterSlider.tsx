@@ -67,11 +67,7 @@ const CharacterSlider: React.FC<CharacterSliderProps> = ({
 
 	return (
 		<Grid container sx={{ maxWidth: '100vw' }}>
-			<Grid
-				item
-				sx={{ paddingTop: 4, overflowX: 'hidden', overflowY: 'visible' }}
-				xs={12}
-			>
+			<Grid item sx={{ paddingTop: 4 }} xs={12}>
 				<Slider {...settings}>
 					{characters.map((character, index) => (
 						<div key={index}>
